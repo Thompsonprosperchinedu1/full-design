@@ -1,0 +1,68 @@
+<head>
+    <h1>REGISTER</h1>
+
+    <script>
+        function showpass(){
+    
+            var pass = document.getElementById('pass');
+            if(document.getElementById('check').checked){
+                pass.setAttribute('type','text');
+             }else{
+                pass.setAttribute('type','password');
+             }
+        }
+    </script>
+</head>
+<body>
+
+    <form>
+
+        <input type="last name" placeholder="eneter your last name"><br>
+        <input type="first name" placeholder="eneter your first name"><br>
+        <input type="email" placeholder="eneter your email"><br>
+        <input type="phone number" placeholder="eneter your phone number"><br>
+        <input type="password" id="pass"/>
+        <input type="checkbox" id="check" onclick="showpass();"/>show password<br>
+
+        <select>
+            <option>Gender</option>
+            <option>male</option>
+            <option>female</option>
+
+        </select>
+
+        <button type="submit">submit</button>
+
+        <button type="submit"><a href="inde.html">back</a></button>
+    
+    
+
+    </form>
+
+    <style>
+
+        h1{
+            background-color: blue;
+            
+        }
+        input{
+            padding: 1em;
+            border-radius: 1em;
+            border-color: black;
+            margin: 1em;
+        }
+
+        body{
+            width: 50%;
+            margin: 0px auto;
+        }
+        form{
+            border: 1px solid black;
+        }
+        #pass{
+            padding: 10px;
+        }
+    </style>
+ 
+
+</body>
